@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import TerminalText from "@/components/terminal-text";
 import Image from "next/image";
 import TechStack from "@/components/tech-stack";
+import ProjectCard from "@/components/project-card";
 
 export default function Home() {
   return (
@@ -131,6 +132,44 @@ export default function Home() {
             <div>
               <TechStack />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:50px_50px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background" />
+        </div>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="inline-block px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-mono mb-4">
+            Projetos
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-foreground">Meus trabalhos recentes</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ProjectCard
+              title="CRM Inteligente"
+              description="Uma plataforma completa para gestão de clientes, integração com WhatsApp e automação de vendas."
+              technologies={["NestJS", "TypeORM", "React", "PostgreSQL"]}
+              githubUrl="https://github.com/DouglasMai4/crm-inteligente"
+              icon="💼"
+            />
+            <ProjectCard
+              title="Disparador de Mensagens WhatsApp"
+              description="Ferramenta para envio em massa de mensagens no WhatsApp via API, com suporte a múltiplas sessões."
+              technologies={["NestJS", "Baileys", "Prisma", "Docker"]}
+              githubUrl="https://github.com/DouglasMai4/whatsapp-sender"
+              icon="💬"
+            />
+            <ProjectCard
+              title="Chatbot Inteligente"
+              description="Assistente virtual baseado em IA para automação de atendimento e suporte ao cliente."
+              technologies={["NestJS", "Ollama (Gemma 2)", "PostgreSQL"]}
+              githubUrl="https://github.com/DouglasMai4/chatbot-ia"
+              icon="🤖"
+            />
           </div>
         </div>
       </section>
