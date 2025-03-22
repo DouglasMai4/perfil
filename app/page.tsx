@@ -215,7 +215,7 @@ export default function Home() {
                     github.com/DouglasMai4
                   </a>
                   <a
-                    href="https://linkedin.com/in/douglasmaia"
+                    href="https://linkedin.com/in/douglasmai4"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-3 text-lg text-foreground hover:text-primary transition-colors"
