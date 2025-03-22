@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/header";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const geistMono = Geist_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="dark">
-      <body className={geist.className}>{children}</body>
+      <body className={`${geist.variable} ${geistMono.variable} --font-geist`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
