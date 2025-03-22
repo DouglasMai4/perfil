@@ -156,21 +156,21 @@ export default function Home() {
               title="CRM Inteligente"
               description="Uma plataforma completa para gestão de clientes, integração com WhatsApp e automação de vendas."
               technologies={["NestJS", "TypeORM", "React", "PostgreSQL"]}
-              githubUrl="https://github.com/DouglasMai4/crm-inteligente"
+              githubUrl="https://kingdomsoftwares.com.br"
               icon="💼"
             />
             <ProjectCard
               title="Disparador de Mensagens WhatsApp"
               description="Ferramenta para envio em massa de mensagens no WhatsApp via API, com suporte a múltiplas sessões."
               technologies={["NestJS", "Baileys", "Prisma", "Docker"]}
-              githubUrl="https://github.com/DouglasMai4/whatsapp-sender"
+              githubUrl="https://whatsapp.kingdomsoftwares.com.br"
               icon="💬"
             />
             <ProjectCard
               title="Chatbot Inteligente"
               description="Assistente virtual baseado em IA para automação de atendimento e suporte ao cliente."
               technologies={["NestJS", "Ollama (Gemma 2)", "PostgreSQL"]}
-              githubUrl="https://github.com/DouglasMai4/chatbot-ia"
+              githubUrl="https://kingdomsoftwares.com.br"
               icon="🤖"
             />
           </div>
