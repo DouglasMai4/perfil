@@ -20,11 +20,11 @@ Bem-vindo ao repositório do meu portfólio profissional! 🚀 Aqui você encont
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/DouglasMai4/portfolio.git
+   git clone https://github.com/DouglasMai4/perfil.git
    ```
 2. Acesse a pasta do projeto:
    ```bash
-   cd portfolio
+   cd perfil
    ```
 3. Instale as dependências:
    ```bash
