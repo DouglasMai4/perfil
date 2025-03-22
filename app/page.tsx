@@ -61,17 +61,17 @@ export default function Home() {
               </div>
               <div className="ml-4">
                 <span className="text-zinc-300">name</span>:{" "}
-                <span className="text-green-400">'Douglas Maia'</span>,
+                <span className="text-green-400">&apos;Douglas Maia&apos;</span>,
               </div>
               <div className="ml-4">
                 <span className="text-zinc-300">skills</span>: [
-                <span className="text-green-400">'Full Stack'</span>,{" "}
-                <span className="text-green-400">'React'</span>,{" "}
-                <span className="text-green-400">'Node.js'</span>],
+                <span className="text-green-400">&apos;Full Stack&apos;</span>,{" "}
+                <span className="text-green-400">&apos;React&apos;</span>,{" "}
+                <span className="text-green-400">&apos;Node.js&apos;</span>],
               </div>
               <div className="ml-4">
                 <span className="text-zinc-300">passion</span>:{" "}
-                <span className="text-green-400">'Building amazing apps'</span>
+                <span className="text-green-400">&apos;Building amazing apps&apos;</span>
               </div>
               <div>{"}"};</div>
             </div>
