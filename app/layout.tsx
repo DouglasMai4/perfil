@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/header";
+import MouseFollower from "@/components/mouse-follower";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const geistMono = Geist_Mono({
@@ -24,8 +25,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="dark">
       <body className={`${geist.variable} ${geistMono.variable} --font-geist`}>
-        <Header />
-        {children}
+        <MouseFollower />
+        <div>
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
