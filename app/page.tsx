@@ -2,11 +2,12 @@ import Link from "next/link";
 
 import ParticleAnimation from "@/components/particle-animation";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import TerminalText from "@/components/terminal-text";
 import Image from "next/image";
 import TechStack from "@/components/tech-stack";
 import ProjectCard from "@/components/project-card";
+import ContactForm from "@/components/contact-form";
 
 export default function Home() {
   return (
@@ -147,7 +148,9 @@ export default function Home() {
           <div className="inline-block px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-mono mb-4">
             Projetos
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-foreground">Meus trabalhos recentes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-foreground">
+            Meus trabalhos recentes
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
               title="CRM Inteligente"
@@ -170,6 +173,64 @@ export default function Home() {
               githubUrl="https://github.com/DouglasMai4/chatbot-ia"
               icon="🤖"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="inline-block px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-mono mb-4">
+            Contato
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-foreground">
+            Vamos conversar
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <div className="space-y-6">
+                <p className="text-lg text-foreground/70">
+                  📞 Quer conversar sobre um projeto? Preencha o formulário ao
+                  lado e entrarei em contato!
+                </p>
+                <div className="flex flex-col space-y-4 mt-8">
+                  <a
+                    href="mailto:contato@douglasmaia.dev.br"
+                    className="group inline-flex items-center gap-3 text-lg text-foreground hover:text-primary transition-colors"
+                  >
+                    <span className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary border border-accent group-hover:border-primary/50 transition-colors">
+                      <Mail className="h-5 w-5" />
+                    </span>
+                    contato@douglasmaia.dev.br
+                  </a>
+                  <a
+                    href="https://github.com/DouglasMai4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-3 text-lg text-foreground hover:text-primary transition-colors"
+                  >
+                    <span className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary border border-accent group-hover:border-primary/50 transition-colors">
+                      <Github className="h-5 w-5" />
+                    </span>
+                    github.com/DouglasMai4
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/douglasmaia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-3 text-lg text-foreground hover:text-primary transition-colors"
+                  >
+                    <span className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary border border-accent group-hover:border-primary/50 transition-colors">
+                      <Linkedin className="h-5 w-5" />
+                    </span>
+                    linkedin.com/in/douglasmai4
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
