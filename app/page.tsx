@@ -4,6 +4,8 @@ import ParticleAnimation from "@/components/particle-animation";
 
 import { ArrowRight } from "lucide-react";
 import TerminalText from "@/components/terminal-text";
+import Image from "next/image";
+import TechStack from "@/components/tech-stack";
 
 export default function Home() {
   return (
@@ -47,7 +49,9 @@ export default function Home() {
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                <span className="ml-2 text-foreground/50terminal-text.tsx">terminal</span>
+                <span className="ml-2 text-foreground/50terminal-text.tsx">
+                  terminal
+                </span>
               </div>
               <div>
                 <span className="text-primary">const</span>{" "}
@@ -73,6 +77,62 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="inline-block px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-mono mb-4">
+            Sobre
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-foreground">
+            👋 Olá, sou Douglas Maia!
+          </h2>
+          <div className="grid md:grid-cols-[2fr_1fr] gap-12">
+            <div className="space-y-6">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="relative group">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-xl blur opacity-50 group-hover:opacity-75 transition duration-300"></div>
+                  <div className="hidden md:block relative">
+                    <Image
+                      src="https://github.com/DouglasMai4.png"
+                      alt="Douglas Maia"
+                      width={500}
+                      height={500}
+                      className="rounded-xl object-cover"
+                    />
+                  </div>
+                </div>
+                <p className="text-lg text-foreground">
+                  Sou um desenvolvedor full stack apaixonado por tecnologia e
+                  inovação. Com experiência em desenvolvimento web e mobile,
+                  minha missão é criar soluções modernas, performáticas e
+                  escaláveis. Minha trajetória inclui desde desenvolvimento de
+                  aplicações empresariais até a criação de ferramentas
+                  inteligentes para automação e comunicação.
+                </p>
+              </div>
+              <div className="bg-secondary/50 border border-accent p-6 rounded-lg backdrop-blur-sm">
+                <h3 className="text-xl font-semibold mb-4 font-mono text-foreground">
+                  🚀 Fundador da{" "}
+                  <Link
+                    href="https://kingdomsoftwares.com.br"
+                    target="_blank"
+                    className="text-primary hover:underline"
+                  >
+                    Kingdom Softwares
+                  </Link>
+                </h3>
+                <p className="text-foreground">
+                  Uma software house focada em modernidade e performance.
+                </p>
+              </div>
+            </div>
+            <div>
+              <TechStack />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
