@@ -37,7 +37,7 @@ export default function RootLayout({
         </div>
         <Footer />
 
-        // Analytics
+        {/* This is a placeholder for the Vercel Analytics and Speed Insights components. */}
         <Analytics />
         <SpeedInsights />
       </body>
